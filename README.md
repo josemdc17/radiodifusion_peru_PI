@@ -10,4 +10,8 @@ Sin embargo, estudios llevados a cabo el año 2019 por las naciones unidas deter
 
 (buscar data sobre radio y periodico en zonas rurales del Perú).
 
-### El proyecto
+## El proyecto
+
+### Preparación del archivo base
+
+El cliente nos proporcionó un archivo que cuenta con los datos de las zonas de las que se quiere extraer información específicamente.

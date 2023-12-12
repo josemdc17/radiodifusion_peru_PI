@@ -1,19 +1,20 @@
 import pandas as pd
 
-# Replace 'your_file.xlsx' with the path to your Excel file
-excel_file_path = 'muestra.xlsx'
 
-# Read the Excel file into a Pandas DataFrame
-df = pd.read_excel(excel_file_path, dtype=str).iloc[:, 0]
+def create_array():
 
-arraynew = df.values
+    data_source_file_path = "./files/muestra.xlsx"
 
-arraynewnew = map(lambda x: [x[i:i + 2]
-                  for i in range(0, len(x), 2)], arraynew)
+    # Read the Excel file into a Pandas DataFrame
+    df = pd.read_excel(data_source_file_path, dtype=str).iloc[:, 0]
+
+    get_df_values = df.values
+
+    formated_array = map(lambda x: [x[i:i + 2]
+                                    for i in range(0, len(x), 2)], get_df_values)
+
+    return list(formated_array)
 
 
-# Display basic information about the DataFrame
-print(arraynew)
-print('-----------------------------------')
-print('-----------------------------------')
-print(list(arraynewnew))
+if __name__ == '__main__':
+    create_array()
